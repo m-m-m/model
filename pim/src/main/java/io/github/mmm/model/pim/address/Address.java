@@ -4,9 +4,6 @@ package io.github.mmm.model.pim.address;
 
 import io.github.mmm.bean.Name;
 import io.github.mmm.entity.bean.EntityBean;
-import io.github.mmm.model.pim.geo.City;
-import io.github.mmm.model.pim.geo.PostalCode;
-import io.github.mmm.model.pim.geo.Region;
 import io.github.mmm.property.string.StringProperty;
 
 /**
@@ -24,16 +21,16 @@ public interface Address extends EntityWithCountry {
   StringProperty StreetNumber();
 
   /**
-   * @return the {@link PostalCode#Code() postal code} (ZIP) of the {@link #City()}.
+   * @return the postal code (ZIP) of the {@link #City()}.
    */
   StringProperty PostalCode();
 
   /**
-   * @return the {@link City#Name name} of the {@link City} the {@link Address} is located in.
+   * @return the name of the city the {@link Address} is located in.
    */
   StringProperty City();
 
-  /** @return the {@link Region#Name name} of the {@link Region} the {@link Address} is located in. */
+  /** @return the name of the region (state or provice) the {@link Address} is located in. */
   StringProperty Region();
 
 }
