@@ -17,11 +17,15 @@ public interface Address extends EntityWithCountry {
   /** @return the name of the street this {@link Address} is located in. */
   StringProperty Street();
 
-  /** @return the house number in the {@link #Street}. */
+  /**
+   * @return the house number in the {@link #Street}. Typically numeric but can also be alpha-numeric (e.g. "6b" or
+   *         "12½").
+   */
   StringProperty StreetNumber();
 
   /**
-   * @return the postal code (ZIP) of the {@link #City()}.
+   * @return the postal code (ZIP) of the {@link #City()}. The postal codes depend on the {@link #Country()}: Some
+   *         countries do not have postal codes at all, some have strictly numeric and others have alpha-numeric ones.
    */
   StringProperty PostalCode();
 

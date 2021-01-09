@@ -17,7 +17,7 @@ import io.github.mmm.model.geo.us.UsState;
  * </tr>
  * <tr>
  * <td>USA</td>
- * <td>{@link io.github.mmm.model.geo.us.us.UsState State}</td>
+ * <td>{@link io.github.mmm.model.geo.us.UsState State}</td>
  * </tr>
  * <tr>
  * <td>Germany</td>
