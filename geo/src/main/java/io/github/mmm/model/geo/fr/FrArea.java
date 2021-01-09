@@ -3,7 +3,6 @@
 package io.github.mmm.model.geo.fr;
 
 import io.github.mmm.bean.AbstractInterface;
-import io.github.mmm.bean.PropertyMethod;
 import io.github.mmm.model.geo.CountryArea;
 import io.github.mmm.model.geo.impl.GeoConstants;
 import io.github.mmm.property.string.StringProperty;
@@ -15,7 +14,6 @@ import io.github.mmm.property.string.StringProperty;
 public interface FrArea extends CountryArea {
 
   @Override
-  @PropertyMethod
   default StringProperty Country() {
 
     return GeoConstants.COUNTRY_FR;
