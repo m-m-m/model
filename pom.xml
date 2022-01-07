@@ -5,11 +5,11 @@
   <parent>
     <groupId>io.github.m-m-m</groupId>
     <artifactId>mmm</artifactId>
-    <version>9</version>
+    <version>12</version>
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
   <artifactId>mmm-model-parent</artifactId>
-  <version>${revision}${changelist}</version>
+  <version>${revision}</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Provides a data-model with generic and reusable entities.</description>
@@ -24,13 +24,20 @@
   </modules>
 
   <properties>
-    <revision>1.0.0</revision>
-    <changelist>-SNAPSHOT</changelist>
+    <revision>0-SNAPSHOT</revision>
     <mmm.repository>model</mmm.repository>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>mmm-entity-parent</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!-- own modules -->
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>mmm-model-core</artifactId>
@@ -55,13 +62,6 @@
         <groupId>${project.groupId}</groupId>
         <artifactId>mmm-model-video</artifactId>
         <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>mmm-entity-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <type>pom</type>
-        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

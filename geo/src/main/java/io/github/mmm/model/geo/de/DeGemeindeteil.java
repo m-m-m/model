@@ -3,7 +3,7 @@
 package io.github.mmm.model.geo.de;
 
 import io.github.mmm.bean.Mandatory;
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.geo.City;
 
 /**
@@ -17,6 +17,6 @@ public interface DeGemeindeteil extends City {
    * @return {@link DeGemeinde} this {@link DeGemeindeteil} belongs to.
    */
   @Mandatory
-  IdProperty<DeGemeinde> Gemeinde();
+  LinkProperty<DeGemeinde> Gemeinde();
 
 }

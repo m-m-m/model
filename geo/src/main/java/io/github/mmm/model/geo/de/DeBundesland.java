@@ -2,7 +2,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0 */
 package io.github.mmm.model.geo.de;
 
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.geo.Region;
 
 /**
@@ -15,6 +15,6 @@ import io.github.mmm.model.geo.Region;
 public interface DeBundesland extends Region {
 
   /** @return the capital city of this {@link DeBundesland}. */
-  IdProperty<DeGemeinde> Capital();
+  LinkProperty<DeGemeinde> Capital();
 
 }

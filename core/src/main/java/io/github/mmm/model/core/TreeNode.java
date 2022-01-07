@@ -3,7 +3,7 @@
 package io.github.mmm.model.core;
 
 import io.github.mmm.entity.bean.EntityBean;
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 
 /**
  * {@link EntityBean} that represents a node in a tree. The tree hierarchy is defined by the {@link #Parent() parent}
@@ -17,6 +17,6 @@ public abstract interface TreeNode<T extends TreeNode<T>> extends EntityBean {
   /**
    * @return the parent node or {@code null} if this is the root node.
    */
-  IdProperty<T> Parent();
+  LinkProperty<T> Parent();
 
 }

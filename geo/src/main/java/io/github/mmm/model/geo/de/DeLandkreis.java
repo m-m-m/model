@@ -3,7 +3,7 @@
 package io.github.mmm.model.geo.de;
 
 import io.github.mmm.bean.Mandatory;
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.geo.CountryArea;
 
 /**
@@ -18,6 +18,6 @@ public interface DeLandkreis extends DeArea {
    * @return the {@link DeRegierungsbezirk} this {@link DeLandkreis} belongs to.
    */
   @Mandatory
-  IdProperty<DeRegierungsbezirk> Regierungsbezirk();
+  LinkProperty<DeRegierungsbezirk> Regierungsbezirk();
 
 }

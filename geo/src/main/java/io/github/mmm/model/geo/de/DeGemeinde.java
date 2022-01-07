@@ -3,7 +3,7 @@
 package io.github.mmm.model.geo.de;
 
 import io.github.mmm.bean.Mandatory;
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.geo.City;
 
 /**
@@ -19,6 +19,6 @@ public interface DeGemeinde extends City {
    *         a {@link DeLandkreis} is created that represents that entire {@link DeGemeinde}.
    */
   @Mandatory
-  IdProperty<DeLandkreis> Landkreis();
+  LinkProperty<DeLandkreis> Landkreis();
 
 }

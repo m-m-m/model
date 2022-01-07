@@ -3,7 +3,7 @@
 package io.github.mmm.model.geo.fr;
 
 import io.github.mmm.bean.Mandatory;
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.geo.Region;
 
 /**
@@ -18,6 +18,6 @@ public interface FrDepartement extends FrArea {
    * @return the {@link FrRegion} this {@link FrDepartement} belongs to.
    */
   @Mandatory
-  IdProperty<FrRegion> Region();
+  LinkProperty<FrRegion> Region();
 
 }

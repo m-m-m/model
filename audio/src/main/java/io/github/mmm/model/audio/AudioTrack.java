@@ -2,7 +2,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0 */
 package io.github.mmm.model.audio;
 
-import io.github.mmm.entity.property.id.IdProperty;
+import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.core.EntityWithName;
 import io.github.mmm.model.media.artist.Artist;
 import io.github.mmm.property.number.integers.IntegerProperty;
@@ -23,7 +23,7 @@ public interface AudioTrack extends EntityWithName {
   /**
    * @return the {@link AudioGenre genre} of the track.
    */
-  IdProperty<AudioGenre> Genre();
+  LinkProperty<AudioGenre> Genre();
 
   /**
    * @return the musical key of the track. Value will be empty if no music, not in a main key, or unknown.
@@ -46,12 +46,12 @@ public interface AudioTrack extends EntityWithName {
   /**
    * @return the {@link Artist} who performed this track.
    */
-  IdProperty<Artist> Artist();
+  LinkProperty<Artist> Artist();
 
   /**
    * @return the optional {@link Artist} who composed this track. Should only be set if different from
    *         {@link #Artist()}.
    */
-  IdProperty<Artist> Composer();
+  LinkProperty<Artist> Composer();
 
 }
