@@ -2,7 +2,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0 */
 package io.github.mmm.model.geo;
 
-import io.github.mmm.bean.Name;
+import io.github.mmm.bean.BeanName;
 import io.github.mmm.model.core.EntityWithCode;
 import io.github.mmm.model.pim.address.EntityWithCountry;
 
@@ -11,7 +11,7 @@ import io.github.mmm.model.pim.address.EntityWithCountry;
  *
  * @since 1.0.0
  */
-@Name("mmm.PostalCode")
+@BeanName("mmm.PostalCode")
 public interface PostalCode extends CountryArea, EntityWithCode {
 
 }

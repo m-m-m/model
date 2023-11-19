@@ -3,7 +3,7 @@
 package io.github.mmm.model.pim.person;
 
 import io.github.mmm.bean.AbstractInterface;
-import io.github.mmm.bean.Name;
+import io.github.mmm.bean.BeanName;
 import io.github.mmm.entity.bean.EntityBean;
 import io.github.mmm.entity.property.link.LinkProperty;
 import io.github.mmm.model.pim.address.Address;
@@ -14,7 +14,7 @@ import io.github.mmm.model.pim.contact.ContactData;
  *
  * @since 1.0.0
  */
-@Name("mmm.Person")
+@BeanName("mmm.Person")
 @AbstractInterface
 public interface Person extends EntityBean {
 

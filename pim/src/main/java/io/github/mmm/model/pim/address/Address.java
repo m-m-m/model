@@ -2,7 +2,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0 */
 package io.github.mmm.model.pim.address;
 
-import io.github.mmm.bean.Name;
+import io.github.mmm.bean.BeanName;
 import io.github.mmm.entity.bean.EntityBean;
 import io.github.mmm.property.string.StringProperty;
 
@@ -11,7 +11,7 @@ import io.github.mmm.property.string.StringProperty;
  *
  * @since 1.0.0
  */
-@Name("mmm.Address")
+@BeanName("mmm.Address")
 public interface Address extends EntityWithCountry {
 
   /** @return the name of the street this {@link Address} is located in. */

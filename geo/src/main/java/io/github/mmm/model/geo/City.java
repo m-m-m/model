@@ -2,7 +2,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0 */
 package io.github.mmm.model.geo;
 
-import io.github.mmm.bean.Name;
+import io.github.mmm.bean.BeanName;
 import io.github.mmm.entity.bean.SimpleEntityBean;
 
 /**
@@ -10,7 +10,7 @@ import io.github.mmm.entity.bean.SimpleEntityBean;
  *
  * @since 1.0.0
  */
-@Name("mmm.City")
+@BeanName("mmm.City")
 public interface City extends CountryArea {
 
 }

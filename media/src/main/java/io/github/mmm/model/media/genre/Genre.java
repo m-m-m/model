@@ -3,7 +3,7 @@
 package io.github.mmm.model.media.genre;
 
 import io.github.mmm.bean.AbstractInterface;
-import io.github.mmm.bean.Name;
+import io.github.mmm.bean.BeanName;
 import io.github.mmm.model.core.EntityWithCode;
 import io.github.mmm.model.core.EntityWithName;
 import io.github.mmm.model.core.TreeNode;
@@ -14,7 +14,7 @@ import io.github.mmm.model.core.TreeNode;
  * @param <T> type of the genre itself.
  * @since 1.0.0
  */
-@Name("mmm.Genre")
+@BeanName("mmm.Genre")
 @AbstractInterface
 public interface Genre<T extends Genre<T>> extends TreeNode<T>, EntityWithCode, EntityWithName {
 

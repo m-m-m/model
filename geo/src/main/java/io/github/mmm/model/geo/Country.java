@@ -2,8 +2,8 @@
  * http://www.apache.org/licenses/LICENSE-2.0 */
 package io.github.mmm.model.geo;
 
+import io.github.mmm.bean.BeanName;
 import io.github.mmm.bean.Mandatory;
-import io.github.mmm.bean.Name;
 import io.github.mmm.model.core.EntityWithName;
 import io.github.mmm.property.number.integers.IntegerProperty;
 import io.github.mmm.property.pattern.PatternProperty;
@@ -14,7 +14,7 @@ import io.github.mmm.property.string.StringProperty;
  *
  * @since 1.0.0
  */
-@Name("mmm.Country")
+@BeanName("mmm.Country")
 public interface Country extends EntityWithName {
 
   /**
