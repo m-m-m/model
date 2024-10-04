@@ -3,7 +3,7 @@
 package io.github.mmm.model.pim.person;
 
 import io.github.mmm.property.string.StringProperty;
-import io.github.mmm.property.temporal.localdate.LocalDateProperty;
+import io.github.mmm.property.time.localdate.LocalDateProperty;
 
 /**
  * {@link Person} that is a natural person (human being).
